@@ -1,4 +1,4 @@
-module github.com/open-telemetry/opentelemetry-collector-releases/core
+module github.com/pavolloffay/opentelemetry-collector-releases/distributions/otelcol/_build
 
 go 1.17
 
