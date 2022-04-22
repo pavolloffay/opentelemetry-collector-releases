@@ -49,3 +49,5 @@ processors:
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/processor/spanprocessor v0.49.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/processor/probabilisticsamplerprocessor v0.49.0
   - gomod: github.com/open-telemetry/opentelemetry-collector-contrib/processor/filterprocessor v0.49.0
+  - import: github.com/pavolloffay/opentelemetry-collector-releases/processors/example
+    gomod: github.com/pavolloffay/opentelemetry-collector-releases main
