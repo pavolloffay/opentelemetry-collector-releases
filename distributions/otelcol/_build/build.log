@@ -1,0 +1,41 @@
+2022-04-22T14:08:16.836+0200	INFO	internal/command.go:82	OpenTelemetry Collector distribution builder	{"version": "0.44.0", "date": "2022-02-02T23:21:41Z"}
+2022-04-22T14:08:16.837+0200	INFO	internal/command.go:102	Using config file	{"path": "manifest.yaml"}
+2022-04-22T14:08:16.892+0200	INFO	builder/config.go:99	Using go	{"go-executable": "go"}
+2022-04-22T14:08:16.893+0200	ERROR	internal/command.go:48	invalid module configuration	{"error": "invalid gomod specification for module, module: \"\""}
+go.opentelemetry.io/collector/cmd/builder/internal.Command.func1
+	go.opentelemetry.io/collector/cmd/builder/internal/command.go:48
+github.com/spf13/cobra.(*Command).execute
+	github.com/spf13/cobra@v1.3.0/command.go:856
+github.com/spf13/cobra.(*Command).ExecuteC
+	github.com/spf13/cobra@v1.3.0/command.go:974
+github.com/spf13/cobra.(*Command).Execute
+	github.com/spf13/cobra@v1.3.0/command.go:902
+main.main
+	go.opentelemetry.io/collector/cmd/builder/main.go:26
+runtime.main
+	runtime/proc.go:255
+Error: invalid gomod specification for module, module: ""
+Usage:
+  builder [flags]
+  builder [command]
+
+Available Commands:
+  completion  Generate the autocompletion script for the specified shell
+  help        Help about any command
+  version     Version of opentelemetry-collector-builder
+
+Flags:
+      --config string            config file (default is $HOME/.otelcol-builder.yaml)
+      --description string       A descriptive name for the OpenTelemetry Collector distribution (default "Custom OpenTelemetry Collector distribution")
+      --go string                The Go binary to use during the compilation phase. Default: go from the PATH
+  -h, --help                     help for builder
+      --module string            The Go module for the new distribution (default "go.opentelemetry.io/collector/cmd/builder")
+      --name string              The executable name for the OpenTelemetry Collector distribution (default "otelcol-custom")
+      --otelcol-version string   Which version of OpenTelemetry Collector to use as base (default "0.43.0")
+      --output-path string       Where to write the resulting files (default "/tmp/otelcol-distribution273332381")
+      --skip-compilation         Whether builder should only generate go code with no compile of the collector (default false)
+      --version string           The version for the OpenTelemetry Collector distribution (default "1.0.0")
+
+Use "builder [command] --help" for more information about a command.
+
+Error: invalid gomod specification for module, module: ""
